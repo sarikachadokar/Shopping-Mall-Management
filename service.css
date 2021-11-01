@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    font-size: 20px;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+header
+{
+background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url('../photos/blue2.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 100vh;
+}
+.service1{
+    color: navy;
+    text-decoration-line: underline;
+    text-align: center;
+}
+.service2 p{
+    margin-top: 30px;
+    text-align: center;
+
+
+}
+.brand{
+    margin-top: 20px;
+    color: navy;
+    text-decoration-line: underline;
+    text-align: center;
+}
+.pics{
+    border-radius: 8px;
+    margin-left: 250px;
+    margin-top: 20px;
+    
+}
+.finance{
+    margin-top: 20px;
+    color: navy;
+    text-decoration-line: underline;
+    text-align: center; 
+}
+.finance2{
+    border-radius: 8px;
+    margin-left: 350px;
+    margin-top: 20px;
+}

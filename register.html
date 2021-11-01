@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Registration form </title>
+<link rel="stylesheet" href="Style.css" >
+</head>
+<body>
+<div class="container1">
+<div class="card">
+<div class="inner-box" id="card">
+<div class="card-front">
+<h2>Login</h2>
+<form >
+<input type="email" class="input-box" placeholder= "Your Email Id" id="Email"  required><br>
+<input type="Password" class="input-box" placeholder= "Your Password "id="password" required>
+
+<button type="submit"  class="submit-btnnn">Submit</button>
+
+<input type="checkbox"><span>Remember Me</span>	
+</form>
+<button type="button" class="btn" onclick="openRegister()">I'm New Here</button>
+<a href ="">Forget Password</a>
+</div>
+
+
+
+<div class="card-back">
+<h2>Register</h2>
+<form name ="registerForm" action ="../register" method ="post">
+
+
+<input type="Name" class="input-box" placeholder="Your full Name " id="uname" name="uname"required><br>
+
+<input type="text"  class="input-box"  placeholder="your Role"  id="role" name="role"  required>
+
+<input type="tel" class="input-box"  placeholder="Mob no."  id="phone" name="phone"  required>
+
+<input type="email" class="input-box" placeholder="Your Email Id" id="email" name="email" required>
+
+<input type="Password" class="input-box" placeholder="Your Password" id="password" name ="password"required>
+
+<button type="submit" value ="register"  class="submit-btn">Submit</button>
+
+
+</form>
+<button type="button" class="btn" onclick="openLogin()">I'm  Have an Account</button>
+<a href ="">Forget Password</a>
+</div>
+</div>
+</div>	
+
+</div>
+<script>
+   var card= document.getElementById("card");
+   function openRegister(){
+   card.style.transform = "rotateY(-180deg)";
+   }
+   function openLogin(){
+   card.style.transform="rotateY(0deg)";
+   }
+</script>
+
+</body>
+</html>

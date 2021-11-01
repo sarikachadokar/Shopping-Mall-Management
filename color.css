@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+header
+{
+background-image: url('../photos/w3.jpg');
+background-size: cover;
+height: 100vh;
+}

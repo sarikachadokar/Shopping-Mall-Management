@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC
+   "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping> 
+  <class  name="com.shoppingmall.pojo.Order" table="order">
+     
+       <id name="orderId" type="int" column="oid">  
+<generator class="increment"></generator>
+</id>
+    <!-- <many-to-one name = "customer" column = "cid" unique="true" 
+         class="com.shoppingmall.pojo.Customer" not-null="true"/> -->
+   <!-- below code is for one to many relationship between  customer and order -->
+       <set name = "customer" cascade="all">
+         <key column = "cid"/>
+         <one-to-many class="com.shoppingmall.pojo.Customer"/>
+      </set>
+      <set name = "products" cascade="all">
+         <key column = "pid"/>
+         <one-to-many class="com.shoppingmall.pojo.Products"/>
+      </set>
+  </class>  
+ </hibernate-mapping> 
